@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Charisma | Registration</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap/bootstrap.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/overridebootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#refresh').click(function() {
+                location.reload();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <!--LOGO SECTION-->
+        <div class="container">
+            <nav class="navbar navbar-light justify-content-center">
+                <a class="navbar-brand" href="#">
+                <img src="assets/images/Charisma-on-the-Park.png" class="charisma-logo" alt="Charisma on the Park Logo">
+              </a>
+            </nav>
+        </div>
+
+        <!--HERO SECTION-->
+        <div class="container-fluid ">
+            <div class="row align-items-center">
+                <div class="col-1-half">
+                    <p class="rotate text-uppercase sideline-lt hide-sm">Charisma</p>
+                </div>
+                <div class="col-22-half">
+                    <div class="jumbotron d-flex align-items-center">
+                        <div class="container text-center">
+                            <h1 class="display-4">life on the park.</h1>
+                            <a class="btn btn-primary btn-lg reg-btn" href="#" role="button">Register Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-half">
+                    <p class="rotate text-uppercase sideline-rt hide-sm">On the park</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!--ARTICLE SECTION-->
+        <article>
+            <div class="container-fluid">
+                <div class="row align-items-center no-gutters">
+                    <div class="col-lg-5 offset-sm-1 col-sm-10">
+                        <div class="phase-2-article">
+                            <h1>the way <br> to live.</h1>
+                            <h2>PHASE 2 - CONDOS AT VAUGHAN MILLS</h2>
+                            <p>Alluring, refined and perfectly positioned – Charisma On the Park presents condo living that redefines what a true new home experience is all about. Located at Jane and Rutherford, at the centre of all Vaughan has to offer,
+                                Charisma literally puts you on the doorstep of shops, restaurants and entertainment. The comforts of home have never been so complete – outdoor pool, bocce courts, party rooms, a theatre and so much more. Experience life
+                                on the park at Charisma. Register today to receive the latest updates.
+                            </p>
+                        </div>
+                    </div>
+                <!--    <div class="col-lg-5 offset-lg-0 col-sm-10 offset-sm-1 no-gutter flip-card">-->
+                <!--        <div class="flip-card-inner">-->
+                <!--         <div class="flip-card-front">-->
+                <!--        <img src="assets/images/rendering.jpg" class="img-fluid"></img>-->
+                <!--        </div>-->
+                <!--        <div class="flip-card-back">-->
+                <!--        <div class="overlay ctr ">-->
+                <!--            <p class="overlay-txt">Coming <br> Spring 2019</p>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+                </div>
+            </div>
+            </div>
+        </article>
+
+        <!--REGISTRATION FORM SECTION-->
+        <div class="container">
+            <div class="registration">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2>Register</h2>
+                    </div>
+                </div>
+
+                <form id="registration-form" action="contact.php" method="POST">
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-5 offset-md-1 form-padding">
+                            <input type="text" name="fname" id="mail-fname" placeholder="*Your FirstName " class="form-control form-box" required>
+                            <span class="error_form" id="fname_error_message"></span>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <input type="text" name="lname" id="mail-lname" placeholder="*Your LastName" class="form-control form-box" required>
+                            <span class="error_form" id="lname_error_message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-5 offset-md-1 form-padding">
+                            <input type="email" name="email" id="mail-email" placeholder="*Email Address" class="form-control form-box" required>
+                            <span class="error_form" id="email_error_message"></span>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <input type="tel" name="phone" id="mail-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="*Phone Number" class="form-control form-box" required>
+                            <span class="error_form" id="phone_error_message"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-5 offset-md-1 form-padding">
+                            <input type="text" name="city" id="mail-city" placeholder="*City" class="form-control form-box" required>
+                            <span class="error_form" id="city_error_message"></span>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <input type="text" name="pcode" id="mail-pcode" pattern="[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}[A-Za-z]{1}[0-9]{1}" placeholder="*Postal Code" class="form-control form-box" required>
+                            <span class="error_form" id="pcode_error_message"></span>
+                        </div>
+                    </div>
+
+                    <!--IM INTERESTED IN SECTION-->
+                    <div class="row">
+                        <div class="col-12 text-left">
+                            <h3>Im interested in...</h3>
+                        </div>
+                    </div>
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-3 offset-md-1 form-padding">
+                            <label for="size">Unit Size</label>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <select class="form-control form-box" name="size" id="size" required>
+                            <option value ="" disabled selected hidden>Unit Size</option>
+                            <option value="hurr">Durr</option>
+                        </select> <span class="error_form" id="size_error_message"></span>
+                        </div>
+                    </div>
+
+                    <!--Where have you seen us?-->
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-3 offset-md-1 form-padding">
+                            <label for="heard">*How did you hear about us?</label>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <select class="form-control form-box" name="heard" id="heard" required>
+                            <option value ="" disabled selected hidden>How did you hear about us?</option>
+                            <option value="hurr">Durr</option>
+                        </select> <span class="error_form" id="heard_error_message"></span>
+                        </div>
+                    </div>
+
+                    <!--What is you price range?-->
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-3 offset-md-1 form-padding">
+                            <label for="price">*Price Range</label>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <select class="form-control form-box" name="price" id="price" required>
+                            <option value ="" disabled selected hidden>Price Range</option>
+                            <option value="hurr">Durr</option>
+                        </select> <span class="error_form" id="price_error_message"></span>
+                        </div>
+                    </div>
+                    
+                    <!--Do you work in this profession-->
+                    <div class="form-group row ">
+                        <div class="col-sm-12 col-md-3 offset-md-1 form-padding">
+                            <label for="inlineRadioOptions">*Are you a Broker?</label>
+                        </div>
+                        <div class="col-sm-12 col-md-5 form-padding">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="YES" required>
+                                <label class="form-check-label" for="inlineRadio1">YES</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="NO" required>
+                                <label class="form-check-label" for="inlineRadio2">NO</label>
+                            </div> <span class="error_form" id="radio_options_error_message"></span>
+
+                            
+                        </div>
+                    </div>
+
+
+
+
+
+                    <h5>*In accordance with Canadian Anti-Spam Legislation, I give my consent to receive electronic communications from Greenpark Group regarding: upcoming communities, current communities, leasing opportunities, announcements, invitations,
+                        events, promotions and all other related electronic communications.</h5>
+                    <div class="form-check">
+                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio" value="option" aria-label="..." required>
+                    </div>
+                    <!--Remove space when styling added-->
+                    <br>
+                    <button type="submit" value="submit" name="submit" id="mail-submit">Submit</button>
+                    <input type="reset" id="refresh" value="Reset" />
+                </form>
+
+            </div>
+        </div>
+
+
+    </main>
+
+    <div class="container">
+        <footer id="sticky-footer" class="py-4 footer">
+
+            <div class="container">
+                <div class="row txt-footer">
+                    <div class="col-sm-12 col-md-5 offset-md-1 ">
+                        <img src="assets/images/Greenpark-Group.png" class="align-middle footer-logo"></img>
+                    </div>
+                    <div class="col-sm-12 col-md-5 v-separator social">
+                        <!--Instagram-->
+                        <a class="btn-lg  btn-social" type="button" role="button" href="https://www.instagram.com/greenparkgroup/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <!--Facebook-->
+                        <a class="btn-lg  btn-social " type="button" role="button" href="https://www.facebook.com/GreenparkGroup.ca/"><i class="fab fa-facebook-f"></i></a>
+                        <!--Twitter-->
+                        <a class="btn-lg  btn-social " type="button" role="button" href="https://twitter.com/Greenpark_Group?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a>
+                        <!--Google +-->
+                        <a class="btn-lg  btn-social " type="button" role="button" href="link"><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-8 offset-md-2 ">
+                        <p class="txt-copy">
+                            Copyright &copy; 2017 Greenpark Holdings Ltd. Greenpark is a registered trademark of Greenpark Holdings Ltd. All Rights Reserved. Prices and specifications subject to change without notice. E. & O.E. Brokers protected. <a href="link">Privacy Policy</a>                            / <a href="link">Accessibility</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="assets/script.js"></script>
+</body>
+
+</html>
